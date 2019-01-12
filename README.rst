@@ -7,6 +7,9 @@ Conference management system.
      :target: https://github.com/pydanny/cookiecutter-django/
      :alt: Built with Cookiecutter Django
 
+.. image:: https://pyup.io/repos/github/KarolinaHajzer/goconf/shield.svg
+     :target: https://pyup.io/repos/github/KarolinaHajzer/goconf/
+     :alt: Updates
 
 :License: BSD
 
