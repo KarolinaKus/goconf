@@ -329,3 +329,4 @@ goconf/media/
 .ipython/
 .env
 .envs/*
+!.envs/.local/
