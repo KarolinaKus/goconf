@@ -1,6 +1,10 @@
 {% extends "base.html" %}
 
 {% block content %}
-    yoy
-    {{confs}}
+    {% for conf in confs %}
+        <div>
+        <h1><a href="">{{ conf.title }}</a></h1>
+        <p>Conference date: {{ conf.date|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
 {% endblock %}
