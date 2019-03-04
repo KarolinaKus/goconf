@@ -2,7 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 
-class Conf(models.Model):
+class Conference(models.Model):
     author = models.ForeignKey('users.User', on_delete=models.CASCADE)
     date = models.DateTimeField(default=timezone.now)
     description = models.TextField()
