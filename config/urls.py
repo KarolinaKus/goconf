@@ -4,9 +4,13 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
+from goconf.conferences.views import Conference_list
+from goconf.conferences.views import Conference_detail
+
 
 urlpatterns = [
-    path("", TemplateView.as_view(template_name="pages/home.html"), name="home"),
+    path("", view=Conference_list.as_view(), name="home"),
+    path("conference/<int:pk>", view=Conference_detail.as_view(), name="conference_detail"),
     path(
         "about/",
         TemplateView.as_view(template_name="pages/about.html"),
